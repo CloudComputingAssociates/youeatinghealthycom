@@ -1,0 +1,63 @@
+.hero {
+  max-width: var(--yeh-max-width);
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__logo {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+.hero__statement {
+  max-width: 640px;
+  font-size: 1.2rem;
+  color: var(--yeh-charcoal);
+  margin: 0 0 2.5rem;
+}
+
+.hero__cta {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--yeh-orange), var(--yeh-red));
+  color: var(--yeh-white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(226, 59, 52, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hero__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(226, 59, 52, 0.32);
+}
+
+/* Temporarily disabled CTA — visible but not clickable */
+.hero__cta--disabled,
+.hero__cta--disabled:hover {
+  background: #cccccc;
+  color: #ffffff;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .hero__statement {
+    font-size: 1.1rem;
+  }
+}

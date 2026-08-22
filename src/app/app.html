@@ -1,0 +1,21 @@
+<header class="site-nav">
+  <nav class="site-nav__inner">
+    <a routerLink="/" class="site-nav__brand">YouEatingHealthy</a>
+    <div class="site-nav__links">
+      <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" routerLinkActive="is-active">About</a>
+    </div>
+  </nav>
+</header>
+
+<main class="site-main">
+  <router-outlet></router-outlet>
+</main>
+
+<section class="inquiries">
+  <p class="inquiries__line">
+    Inquiries: <a href="mailto:info@youeatinghealthy.com">info&#64;youeatinghealthy.com</a>
+  </p>
+</section>
+
+<app-footer></app-footer>

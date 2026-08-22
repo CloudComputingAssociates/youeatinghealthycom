@@ -1,0 +1,85 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top navigation */
+.site-nav {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(
+      90deg,
+      var(--yeh-red),
+      var(--yeh-orange),
+      var(--yeh-green),
+      var(--yeh-purple)
+    )
+    1;
+}
+
+.site-nav__inner {
+  max-width: var(--yeh-max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-nav__brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--yeh-charcoal);
+  text-decoration: none;
+}
+
+.site-nav__links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-nav__links a {
+  color: var(--yeh-charcoal);
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav__links a:hover {
+  color: var(--yeh-green);
+}
+
+.site-nav__links a.is-active {
+  border-bottom-color: var(--yeh-green);
+  color: var(--yeh-green);
+}
+
+/* Main content grows to push inquiries + footer down */
+.site-main {
+  flex: 1 0 auto;
+}
+
+/* Inquiries line — sits well below the main content */
+.inquiries {
+  margin-top: 8rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.inquiries__line {
+  margin: 0;
+  color: var(--yeh-gray);
+  font-size: 0.95rem;
+}
+
+.inquiries__line a {
+  color: var(--yeh-purple);
+  text-decoration: none;
+}
+
+.inquiries__line a:hover {
+  text-decoration: underline;
+}
